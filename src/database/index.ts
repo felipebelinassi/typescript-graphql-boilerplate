@@ -5,16 +5,14 @@ import {
   useContainer,
 } from 'typeorm';
 import { Container } from 'typedi';
-import entities from '../entities';
+import { dbEntities } from '../entities';
 
 const createDbConnection = async (
   options: ConnectionOptions
 ): Promise<Connection> => {
-  const entitiesArr = Object.values(entities);
-
   useContainer(Container);
 
-  return createConnection({ ...options, entities: entitiesArr })
+  return createConnection({ ...options, entities: dbEntities })
     .then((connection) => {
       return connection;
     })
