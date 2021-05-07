@@ -13,7 +13,6 @@ const createDbConnection = async (
   useContainer(Container);
   return createConnection({ ...options, entities: dbEntities })
     .then((connection) => {
-      console.log(`Database connected succesfully`);
       return connection;
     })
     .catch((err: Error) => {

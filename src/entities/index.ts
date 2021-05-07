@@ -1,7 +1,7 @@
-import Example from './Example';
+import Pets from './Pets';
 
 const entities = {
-  Example,
+  Pets,
 };
 
 export const dbEntities = Object.values(entities);
