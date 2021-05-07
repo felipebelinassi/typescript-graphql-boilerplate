@@ -10,8 +10,11 @@ import entities from '../entities';
 const createDbConnection = async (
   options: ConnectionOptions
 ): Promise<Connection> => {
+  const entitiesArr = Object.values(entities);
+
   useContainer(Container);
-  return createConnection({ ...options, entities })
+
+  return createConnection({ ...options, entities: entitiesArr })
     .then((connection) => {
       console.log(`Database connected succesfully`);
       return connection;

@@ -1,5 +1,5 @@
 import { EntityRepository, Repository } from 'typeorm';
-import Pets from './Pets';
+import Pets from '.';
 
 type CreatePetParams = Omit<Pets, 'id'>;
 

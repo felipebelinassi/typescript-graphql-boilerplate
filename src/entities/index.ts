@@ -1,3 +1,5 @@
-import Pets from './Pets/Pets';
+import Pets from './Pets';
 
-export default [Pets];
+export default {
+  Pets,
+};
