@@ -11,10 +11,6 @@ const createDbConnection = async (
   options: ConnectionOptions
 ): Promise<Connection> => {
   useContainer(Container);
-<<<<<<< HEAD
-
-=======
->>>>>>> bad4e4638d3839c97968412c19b96dea07755874
   return createConnection({ ...options, entities: dbEntities })
     .then((connection) => {
       return connection;
