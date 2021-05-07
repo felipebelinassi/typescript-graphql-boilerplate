@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es2019",
     "module": "commonjs",
+    "moduleResolution": "node",
     "lib": ["es2019"],
     "outDir": "build",                              /* Enable all strict type-checking options. */
     "esModuleInterop": true,                        /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
@@ -9,5 +10,7 @@
     "forceConsistentCasingInFileNames": true,       /* Disallow inconsistently-cased references to the same file. */
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
   }
 }
