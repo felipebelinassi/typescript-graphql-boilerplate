@@ -10,7 +10,7 @@ export default class CreatePetResolver {
   private petsRepository!: PetsRepository;
 
   @Mutation(() => Pets, { description: 'Create a new pet in the database' })
-  async pets(
+  async createPet(
     @Arg('input', () => CreatePetInput)
     input: CreatePetInput
   ): Promise<Pets> {
