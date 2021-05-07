@@ -5,13 +5,13 @@ import {
   useContainer,
 } from 'typeorm';
 import { Container } from 'typedi';
-import entities from '../entities';
+import { dbEntities } from '../entities';
 
 const createDbConnection = async (
   options: ConnectionOptions
 ): Promise<Connection> => {
   useContainer(Container);
-  return createConnection({ ...options, entities })
+  return createConnection({ ...options, entities: dbEntities })
     .then((connection) => {
       console.log(`Database connected succesfully`);
       return connection;

@@ -1,5 +1,8 @@
 import Example from './Example';
 
-export default {
+const entities = {
   Example,
 };
+
+export const dbEntities = Object.values(entities);
+export default entities;
