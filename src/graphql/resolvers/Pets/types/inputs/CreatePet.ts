@@ -5,7 +5,7 @@ export default class CreatePetInput {
   @Field()
   name!: string;
 
-  @Field()
+  @Field({ nullable: true })
   breed?: string;
 
   @Field()

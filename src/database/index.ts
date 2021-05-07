@@ -16,7 +16,6 @@ const createDbConnection = async (
 
   return createConnection({ ...options, entities: entitiesArr })
     .then((connection) => {
-      console.log(`Database connected succesfully`);
       return connection;
     })
     .catch((err: Error) => {

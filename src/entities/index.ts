@@ -1,5 +1,8 @@
 import Pets from './Pets';
 
-export default {
+const entities = {
   Pets,
 };
+
+export const dbEntities = Object.values(entities);
+export default entities;
