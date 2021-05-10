@@ -5,10 +5,7 @@ import { BuildSchemaOptions, buildSchema } from 'type-graphql';
 import { Container } from 'typedi';
 
 const apolloServer = async () => {
-  const resolvers = path.join(
-    __dirname,
-    '../graphql/resolvers/**/index.{ts,js}'
-  );
+  const resolvers = path.join(__dirname, './resolvers/**/index.{ts,js}');
   const apolloSchemaOptions: BuildSchemaOptions = {
     resolvers: [resolvers],
     validate: false,
