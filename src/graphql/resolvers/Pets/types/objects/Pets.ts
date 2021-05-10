@@ -16,4 +16,7 @@ export default class Pets {
 
   @Field()
   birthDate!: string;
+
+  @Field()
+  createdAt!: Date;
 }

@@ -1,4 +1,9 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  CreateDateColumn,
+} from 'typeorm';
 
 @Entity({ name: 'pets' })
 export default class Pets {
@@ -16,4 +21,11 @@ export default class Pets {
 
   @Column({ type: 'date', name: 'birth_date' })
   birthDate!: string;
+
+  @CreateDateColumn({
+    type: 'timestamptz',
+    name: 'created_at',
+    default: () => 'CURRENT_TIMESTAMP',
+  })
+  createdAt!: Date;
 }
