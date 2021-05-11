@@ -9,5 +9,6 @@ module.exports = {
   verbose: true,
   testMatch: ['**/tests/integration/**/(*.)+(spec|test).+(ts|tsx|js)'],
   clearMocks: true,
-  setupFilesAfterEnv: ['reflect-metadata', './jest-setup.ts'],
+  globalSetup: './jest-setup.ts',
+  setupFilesAfterEnv: ['reflect-metadata'],
 };

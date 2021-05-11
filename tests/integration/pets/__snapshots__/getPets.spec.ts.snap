@@ -37,18 +37,3 @@ Object {
   },
 }
 `;
-
-exports[`Get Pets should return empty array if no pets are registered: Empty pets list 2`] = `
-Object {
-  "data": Object {
-    "pets": Array [],
-  },
-  "errors": undefined,
-  "extensions": undefined,
-  "http": Object {
-    "headers": Headers {
-      Symbol(map): Object {},
-    },
-  },
-}
-`;
