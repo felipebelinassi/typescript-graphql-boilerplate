@@ -2,31 +2,29 @@
 A simple GraphQL API boilerplate using Express, Apollo Server, TypeORM, TypeDI and much more.  
 This project was developed for study purposes and also for a GraphQL API presentation. I pretend to maintain this project and add new features to it, so feel free to suggest improvements and give any feedback 😊.
 
----  
+*Documentation was inspired by the [Express TypeScript Boilerplate](https://github.com/w3tecch/express-typescript-boilerplate) documentation by W3Tech. Check it out, it's very nice.*
 
-## ❯ Table of Contents
+## Table of Contents
 
 - [🚀 TypeScript GraphQL API Boilerplate](#-typescript-graphql-api-boilerplate)
-  - [❯ Table of Contents](#-table-of-contents)
-  - [❯ Getting Started](#-getting-started)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
     - [Step 1: Set up the development environment](#step-1-set-up-the-development-environment)
     - [Step 2: Clone the project](#step-2-clone-the-project)
     - [Step 3: Install dependencies](#step-3-install-dependencies)
     - [Step 3: Set up the local database](#step-3-set-up-the-local-database)
     - [Step 4: Init the application](#step-4-init-the-application)
-  - [❯ Scripts and Tasks](#-scripts-and-tasks)
+  - [Scripts and Tasks](#scripts-and-tasks)
     - [Install](#install)
     - [Database Migration](#database-migration)
     - [Building the project and run it](#building-the-project-and-run-it)
     - [Running in dev mode](#running-in-dev-mode)
-  - [❯ Project Structure](#-project-structure)
-  - [❯ Environment Variables](#-environment-variables)
-  - [❯ Dependencies Documentations](#-dependencies-documentations)
-  - [❯ Author](#-author)
+  - [Project Structure](#project-structure)
+  - [Environment Variables](#environment-variables)
+  - [Dependencies Documentations](#dependencies-documentations)
+  - [Author](#author)
 
----
-
-## ❯ Getting Started
+## Getting Started
 
 ### Step 1: Set up the development environment
 
@@ -89,9 +87,7 @@ yarn start:dev
 > This will start a local server using `ts-node-dev`, which will watch for any file changes and will restart the server according to these changes.
 > The server address will be available to you as `http://localhost:{{port}}`. Port is the same you defined in the `.env` file
 
----
-
-## ❯ Scripts and Tasks
+## Scripts and Tasks
 
 All script are defined in the `package.json` file, but the most important ones are listed here.
 
@@ -110,7 +106,7 @@ All script are defined in the `package.json` file, but the most important ones a
 - Run `yarn start:dev` to start the project with `ts-node-dev`.
 - The server will be available at `http://localhost:{{port}}`
 
-## ❯ Project Structure
+## Project Structure
 
 | Name                               | Description |
 | ---------------------------------- | ----------- |
@@ -125,14 +121,13 @@ All script are defined in the `package.json` file, but the most important ones a
 | .env.example                       | Environment configurations example file |
 | ormconfig.sql                      | TypeORM database config used only for migrations |
 
----
 
-## ❯ Environment Variables
+## Environment Variables
 
 The list bellow features the environment variables defined in the application. All variables are **required**.
 
 | Environment      | Description                                  |
-|:---------------- |:-------------------------------------------- |
+|----------------- |--------------------------------------------- |
 | PORT             | Port where the server will start             |
 | DB_HOST          | Database host                                |
 | DB_PORT          | Database port number                         |
@@ -140,9 +135,7 @@ The list bellow features the environment variables defined in the application. A
 | DB_PASSWORD      | Database user password                       |
 | DB_NAME          | Database name                                |
 
----
-
-## ❯ Dependencies Documentations
+## Dependencies Documentations
 
 | Dependency                        | Description                       |
 | --------------------------------- | --------------------------------- |
@@ -157,8 +150,6 @@ The list bellow features the environment variables defined in the application. A
 | [TypeORM](http://typeorm.io/#/) | TypeORM is highly influenced by other ORMs, such as Hibernate, Doctrine and Entity Framework. |
 | [TypeORM TypeDI Extensions](https://www.npmjs.com/package/typeorm-typedi-extensions) | Decorators for TypeORM that can be used with TypeDI. |
 
----
-
-## ❯ Author
+## Author
 👨‍💻 Felipe Belinassi  
 📫 Reach me at my [email](mailto:felipebelinassi@gmail.com) or [LinkedIn](https://www.linkedin.com/in/felipe-belinassi/).
