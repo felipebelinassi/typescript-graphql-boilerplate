@@ -52,14 +52,4 @@ describe('Get Pets', () => {
     });
     expect(res).toMatchSnapshot('Filled pets list');
   });
-
-  it('should return empty array if no pets are registered', async () => {
-    const apolloServer = await createTestServer();
-    const { query } = createTestClient(apolloServer);
-
-    const res = await query({
-      query: getPetsQuery,
-    });
-    expect(res).toMatchSnapshot('Empty pets list');
-  });
 });

@@ -11,7 +11,8 @@
     "prestart": "yarn build",
     "start": "node -r dotenv/config build/app.js",
     "start:dev": "ts-node-dev --transpile-only -r dotenv/config src/app.ts",
-    "test": "jest --projects ./tests/integration --runInBand"
+    "test": "jest --projects ./tests/integration --runInBand",
+    "db:migrate": "ts-node typeorm migrations:generate -n"
   },
   "dependencies": {
     "apollo-server-express": "^2.24.0",

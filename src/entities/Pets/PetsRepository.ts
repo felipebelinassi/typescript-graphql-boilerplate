@@ -1,7 +1,6 @@
 import { EntityRepository, Repository } from 'typeorm';
 import Pets from '.';
-
-type CreatePetParams = Omit<Pets, 'id'>;
+import CreatePetParams from '../../graphql/resolvers/Pets/types/inputs/CreatePet';
 
 @EntityRepository(Pets)
 export default class PetsRepository extends Repository<Pets> {

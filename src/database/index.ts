@@ -11,7 +11,6 @@ const createDbConnection = async (
   options: ConnectionOptions
 ): Promise<Connection> => {
   useContainer(Container);
-
   return createConnection({ ...options, entities: dbEntities })
     .then((connection) => {
       return connection;
