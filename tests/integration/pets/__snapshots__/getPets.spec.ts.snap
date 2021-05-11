@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Get Pets should return array with one registered pet: Filled pets list 1`] = `
+Object {
+  "data": Object {
+    "pets": Array [
+      Object {
+        "birthDate": "2021-05-07",
+        "breed": "Tester",
+        "id": 1,
+        "name": "Test dog",
+        "species": "Canine",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`Get Pets should return empty array if no pets are registered: Empty pets list 1`] = `
+Object {
+  "data": Object {
+    "pets": Array [],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

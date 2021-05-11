@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Pets should register a new pet in the database: New pet 1`] = `
+Object {
+  "data": Object {
+    "createPet": Object {
+      "birthDate": "2021-05-07",
+      "breed": "Tester",
+      "id": 1,
+      "name": "Test dog",
+      "species": "Canine",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

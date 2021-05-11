@@ -19,6 +19,15 @@ services:
     volumes:
       - db-volume:/var/lib/postgresql/data
 
+  db-test:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres-test
+      POSTGRES_PASSWORD: postgrestest@2020
+      POSTGRES_DB: test
+    ports:
+      - '5435:5432'
+
 networks:
   postgres-network:
     driver: bridge
