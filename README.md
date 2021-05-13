@@ -35,7 +35,7 @@ You need to set up your development environment before you can do anything.
 - Install yarn globally. This is **optional** since you can use npm, but be aware that the documentation will mention the yarn scripts.
   
 ```bash
-yarn global add yarn
+npm i -g yarn
 ```
 
 ### Step 2: Clone the project
@@ -119,7 +119,7 @@ All script are defined in the `package.json` file, but the most important ones a
 | **src/database/**                  | Database configuration layer |
 | **src/database/migrations/**       | Database migration scripts |
 | .env.example                       | Environment configurations example file |
-| ormconfig.sql                      | TypeORM database config used only for migrations |
+| ormconfig.json                     | TypeORM database config used only for migrations |
 
 
 ## Environment Variables
